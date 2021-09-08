@@ -137,3 +137,41 @@ nav{
         display: block;
     }
 }
+
+
+
+
+.nav-bottom{
+    background-color: #171717;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+
+.nav-bottom::-webkit-scrollbar{
+    display: none;
+}@media (max-width: 810px){
+    .nav-bottom{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main */
