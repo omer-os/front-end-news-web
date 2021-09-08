@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navTop{
+    background-color: #FF3232;
+    padding: 5px 10px;
+    font-size: .9rem;
+}
+
+.navMiddle{
+    background-color: #282828;
+    padding: 5px 20px;
+}
+
+
+.nav-mid-left{
+    gap: 40px;
+    text-transform: capitalize;
+}
+
+
+
+.searchInput{
+    background: url(./icons/searchIcon.png) no-repeat #525252;
+    background-position-y: 50%;
+    background-position-x: 6px;
+    border-radius: 5px;
+    width: 350px;
+    color: #BFBFBF;
+    background-size: 20px;
+    border: none;
+    padding: 10px 10px 10px 35px;
+    font-size: 1.1rem;
+}.searchInput::target-text{
+    
+}
