@@ -21,6 +21,8 @@ nav{
     left: 0;
     right: 0;
     z-index: 999;
+    transition: all .4s ease-in-out;
+    height: 30px;
 }
 
 .navLeft{
@@ -32,11 +34,12 @@ nav{
     font-weight: 600;
     margin-right: 3vw;
 }.searchNewsInput{
-    padding: 5px;
-    border: 1px solid gray;
+    padding: 5px 7px;
+    border: 1px solid var(--font-gray);
     border-radius: 10px;
     width: 40vmin;
     font-size: 1rem;
+    outline: none;
 }
 .navRight{
     display: flex;
@@ -48,8 +51,79 @@ nav{
     text-transform: capitalize;
     font-weight: 600;
 }
+#categories{
+    width: 150px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-transform: capitalize;
+}#categories option{
+    outline: none;
+}
+
+.burgerBtn{
+    position: fixed;
+    top: 1.9%;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}.line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 4px;
+    position: relative;
+
+    top: 0;
+    opacity: 100;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
 
 
+.line1-animate{
+    transform: rotate(45deg);
+    top: 10px;
+}
+.line2-animate{
+    left: 30px;
+    opacity: 0;
+}
+.line3-animate{
+    transform: rotate(-45deg);
+    top: -10px;
+}
+
+
+@media (max-width: 790px) {
+    .navRight{
+        margin: 20px auto;
+    }
+    .showRightNav{
+        height: 100px;
+    }
+    .navLeft{
+        margin-left: 5%;
+    }
+    nav{
+        flex-direction: column;
+        padding: 15px 0;
+        align-items: flex-start;
+        height: 30px;
+        overflow: hidden;
+    }.burgerBtn{
+        display: inline-block;
+    }
+}
+
+
+
+
+/* main */
 main{
     position: relative;
     top: 100px;
@@ -150,8 +224,8 @@ main{
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .secondNewsContainer{
-        grid: 20px;
+        gap: 0px;
     }
 }
