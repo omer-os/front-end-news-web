@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/aboutus.css">
+</head>
+<body>
+    <nav>
+        <div class="navLeft">
+            <div class="TowNews">TowNews</div>
+            <input type="text" class="searchNewsInput" placeholder="search news">
+        </div>
+        <div class="navRight">
+            <li><a href="./home.html">home</a></li>
+            <li>
+                <select  name="categories" onchange="fetchData()" id="categories">
+                    <option value="all">All categories</option>
+                    <option value="politics">politics</option>
+                    <option value="health">health</option>
+                    <option value="sports">sports</option>
+                </select>
+            </li>
+            <li><a href="./aboutus.html">about us</a></li>
+        </div>
+
+        <div class="burgerBtn">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <div class="mainTitle">About US</div>
+        
+        <div class="container">
+            <div class="conTop">who are we ?</div>
+            <div class="conBottom">We are a group of ambitious young people working on web programming projects.</div>
+        </div>
+        
+
+        <div class="container">
+            <div class="conTop">What is our services
+            </div>
+            <div class="conBottom">We provide web design services all over the world. Contact us and make your idea come true
+                </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="conTop">why us
+            </div>
+            <div class="conBottom">We provide web design services all over the world. Contact us and make your idea come true</div>
+        </div>
+        
+
+        <div class="mainBottom">
+            <a href="#" class="ourWebsiteLink">to learn more see our website</a>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

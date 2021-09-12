@@ -144,8 +144,11 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
-}.FirstNewsRight{
+    animation: animateLoadingImage 2s infinite alternate-reverse;
+}
+
+
+.FirstNewsRight{
     margin-left: 20px;
 }
 .firstNewsTitle{
@@ -210,6 +213,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    animation: animateLoadingImage 2s infinite alternate-reverse;
 }.STitle{
     font-size: 1.1rem;
     font-weight: 600;
@@ -227,5 +231,18 @@ main{
 @media (max-width: 500px){
     .secondNewsContainer{
         gap: 0px;
+    }
+}
+
+
+
+
+
+@keyframes animateLoadingImage {
+    from{
+        background-color: #E1E1E1;
+    }
+    to{
+        background-color: #BBBBBB;
     }
 }

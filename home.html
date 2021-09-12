@@ -14,16 +14,16 @@
             <input type="text" class="searchNewsInput" placeholder="search news">
         </div>
         <div class="navRight">
-            <li><a href="">home</a></li>
+            <li><a href="./home.html">home</a></li>
             <li>
-                <select  name="categories" id="categories">
-                <option value="politics">All categories</option>
-                <option value="politics">politics</option>
-                <option value="politics">health</option>
-                <option value="politics">world</option>
+                <select  name="categories" onchange="fetchData()" id="categories">
+                    <option value="all">All categories</option>
+                    <option value="politics">politics</option>
+                    <option value="health">health</option>
+                    <option value="sports">sports</option>
                 </select>
             </li>
-            <li><a href="">about us</a></li>
+            <li><a href="./aboutus.html">about us</a></li>
         </div>
 
         <div class="burgerBtn">
@@ -90,12 +90,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./app.js"></script>
-    <script>
-        fetch("https://omarchatin.omeros.repl.co/api")
-        .then(res=>res.json())
-        .then((data)=>{
-            console.log(data)
-            })
-    </script>
 </body>
 </html>
